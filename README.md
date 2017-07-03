@@ -1,5 +1,7 @@
 # README
 
+Be careful about the http & https in app/controlers/admin_controller
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
