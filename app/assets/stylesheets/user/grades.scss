@@ -1,0 +1,138 @@
+body {
+  background-color: #F8F8F8;
+}
+
+.no-result {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-result img {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 120px;
+}
+
+.no-result label {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#no-pass-submit {
+  display: none;
+}
+
+.no-result button {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #DDDDDD;
+  background-color: #fafafa;
+}
+
+.info_backg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5bc4c7;
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: white;
+}
+.results {
+  display: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 1px solid #DDDDDD;
+  background-color: #ffffff;
+}
+
+.data {
+  width: 100%;
+  height: 60px;
+  display: none;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.data label {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.data-left {
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+
+.data-title {
+  display: block;
+  font-size: 1.4rem;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.data-name {
+  display: block;
+  font-size: 1.2rem;
+  padding-left: 25px;
+}
+
+.data-right {
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: right;
+}
+
+.data-grade {
+  display: block;
+  font-size: 1.4rem;
+  color: #5bc4c7;
+  padding-right: 25px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.data-status {
+  display: none;
+  font-size: 1rem;
+  padding-right: 25px;
+}
+
+.data-grade-id {
+  display: none;
+}
+
+.reload-more {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.reload-more label {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+  padding-left: 25px;
+  padding-top: 10px;
+}

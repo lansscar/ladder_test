@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+<%= javascript_include_tag 'echarts.min', 'data-turbolinks-track': 'reload' %>
+
+<div class="head">
+  <div class="head-left">
+    <div class="head-left-top">
+      天梯
+    </div>
+    <div class="head-left-bottom"></div>
+  </div>
+  <div class="head-right">
+    <%= image_tag 'ladder.png', width: 47, height: 50 , class: ['img-responsive'] %>
+  </div>
+</div>
+<table class="define">
+  <tr>
+    <td><div class="green"></div><div class="def">&nbsp;前10％</div></td>
+    <td><div class="yellow"></div><div class="def">&nbsp;10％-80％</div></td>
+    <td><div class="red"></div><div class="def">&nbsp;后20％</div></td>
+  </tr>
+</table>
+
+<div class="root" id="root">
+  <div class="item">
+    <div class="item-left">陈圣楠</div>
+    <div class="item-right">
+      <div class="item-top">第一名</div>
+      <div class="item-bottom">
+        <div class="item-bottom1">
+            95.5 分 / A
+        </div>
+        <div class="item-bottom2">
+             ↑3
+        </div>
+        <div class="item-bottom3">
+            相比昨日排名
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="foot"></div>
+
+<table class="bottom-line">
+  <tr>
+    <td style="width:30%" class="home_page_btn">
+      <div>
+        <%= image_tag 'home_page.png', height:30 , width:30, class: ['img-responsive'] %>
+      </div>
+    </td>
+    <td style="width:40%" class="ladder_rank_btn">
+      <div>
+        <%= image_tag 'ladder_rank.png', height:30 , width:30, class: ['img-responsive'] %>
+      </div>
+    </td>
+    <td style="width:30%" class="new_request_btn">
+      <div>
+        <%= image_tag 'new_request.png', height:30 , width:30, class: ['img-responsive'] %>
+      </div>
+    </td>
+  </tr>
+</table>
+<div class="reserved-place"></div>

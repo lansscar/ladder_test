@@ -1,0 +1,47 @@
+<%= javascript_include_tag params[:controller] + '/grades', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag params[:controller] + '/grades', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="calendar-all">
+  <div class="calendar-top"></div>
+  <div class="calendar-head" id="calendar-head" ></div>
+  <div class="calendar" id="calendar" ></div>
+  <div class="calendar-bottom"></div>
+</div>
+<%= javascript_include_tag params[:controller] + '/calendar_module', 'data-turbolinks-track': 'reload' %>
+<script>
+    function choose(object){
+        date=new Date(date.getFullYear(),date.getMonth(),object.innerText);
+        if (object.className!='otherMonth')
+        {
+            showCalendarData("calendarTable2");
+            find(object)
+        }
+    }
+</script>
+<div class="greeting" id="greeting">
+  <div class="greeting-left" id="greeting-left"></div>
+  <div class="greeting-mid">
+    早上好，陈圣楠
+  </div>
+</div>
+<div class="info" id="info">
+  <div class="info-left">
+    <%= image_tag 'rank.png', width: 45, height: 45 , class: ['img-responsive'] %>
+  </div>
+  <div class="info-mid">
+    <div class="rank">排名：第X名</div>
+    <div class="score">总分：——分</div>
+    <div class="grade">等级：</div>
+  </div>
+  <div class="info-right-increase">
+    ↑2
+  </div>
+  <div class="info-right">
+    排名较昨日相比
+  </div>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="daily-increase-details"></div>
+
+

@@ -1,0 +1,53 @@
+<% if @punish %>
+    <%= stylesheet_link_tag 'loaders.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <div class="modal fade" id="users" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">选择成员</h4>
+          </div>
+          <div class="modal-body">
+            <div class="loader" id="loading">
+              <div class="ball-spin-fade-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <ul id="valid-users" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<% end %>
+<form role="form" class="only-form" id="request-form">
+  <div class="form-group">
+    <label class="control-label"><%= @grade_name %></label>
+    <input class="form-control" type="text" name="name" placeholder="请输入<%= @grade_name %>（必填）">
+  </div>
+  <% if @punish %>
+      <div class="form-group">
+        <label class="control-label"><%= @grade_user %></label>
+        <button id="choose-user" type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#users">
+          请选择<%= @grade_user %>（必填）
+        </button>
+        <input type="hidden" id="choose-userid" name="choose-userid">
+      </div>
+  <% end %>
+  <div class="form-group">
+    <label class="control-label"><%= @grade_number %></label>
+    <input class="form-control" type="number" name="grade" placeholder="请输入<%= @grade_number %>（必填，仅数字）">
+  </div>
+  <div class="form-group">
+    <label class="control-label"><%= @grade_description %></label>
+    <textarea class="form-control" name="description" placeholder="请简要介绍<%= @grade_description %>（必填）" rows="4"></textarea>
+  </div>
+  <button id="submit-button" type="submit" class="btn btn-primary btn-block">提交</button>
+</form>

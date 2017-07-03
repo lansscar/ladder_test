@@ -1,0 +1,37 @@
+<%= javascript_include_tag params[:controller] + '/grades', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag params[:controller] + '/grades', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<div class="root">
+  <div class="container no-result" id="no-result-div">
+    <%= image_tag 'find.png', class: ['img-responsive', ''] %>
+    <% if @waiting %>
+        <label>没有待核准的申请</label>
+        <button id="new-request-button" class="btn btn-primary btn-sm">创建新申请</button>
+    <% end %>
+    <% if @proved %>
+        <label>没有已审批的申请</label>
+    <% end %>
+  </div>
+   <div class="info">
+      <div class="info_backg">
+      <div class="info_detail">人性化温馨提示语</div>
+      </div>
+  </div>
+  <div class="container results" id="results-div">
+    <div class="reload-more">
+      <label>点击加载更多</label>
+    </div>
+  </div>
+
+  <div class="data" id="data-sample">
+    <div class="data-left">
+      <label class="data-title"></label>
+      <label class="data-name"></label>
+    </div>
+    <div class="data-right">
+      <label class="data-grade"></label>
+      <label class="data-status"></label>
+    </div>
+    <label class="data-grade-id"></label>
+  </div>
+</div>

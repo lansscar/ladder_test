@@ -1,0 +1,38 @@
+<div class="grid container-fluid">
+  <div class="cell col-xs-4" id="new-grade">
+    <%= image_tag 'new.png', class: ['img-responsive'] %>
+    <label>新申请</label>
+  </div>
+  <div class="cell col-xs-4" id="request-grade">
+    <%= image_tag 'jixiao.png', class: ['img-responsive'] %>
+    <label>待审批</label>
+  </div>
+  <div class="cell col-xs-4" id="proved-grade">
+    <%= image_tag 'proved.png', class: ['img-responsive'] %>
+    <label>已审批</label>
+  </div>
+  <div class="cell col-xs-4" id="calendar">
+    <%= image_tag 'calendar.png', class: ['img-responsive'] %>
+    <label>个人管理</label>
+  </div>
+  <div class="cell col-xs-4" id="graduates">
+    <%= image_tag 'graduates.png', class: ['img-responsive'] %>
+    <label>交大同学</label>
+  </div>
+  <!--<div class="cell col-xs-4"></div>-->
+  <!--<div class="cell col-xs-4"></div>-->
+  <!--<div class="cell col-xs-4"></div>-->
+  <!--<div class="cell col-xs-4"></div>-->
+  <!--<div class="cell col-xs-4"></div>-->
+  <!--<div class="cell col-xs-4"></div>-->
+  <% if @admin %>
+      <div class="cell col-xs-4" id="admin-all-waiting">
+        <%= image_tag 'waiting.png', class: ['img-responsive'] %>
+        <label>待我审批</label>
+      </div>
+      <div class="cell col-xs-4" id="admin-punish">
+        <%= image_tag 'punish.png', class: ['img-responsive'] %>
+        <label>扣分</label>
+      </div>
+  <% end %>
+</div>

@@ -1,0 +1,174 @@
+// Place all the styles related to the ladder controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-size: 14px !important;
+}
+
+.head{
+  width: 100%;
+  height: 57px;
+  padding-left: 37px;
+  background: linear-gradient(0deg, #1A83CD, #36AAFD); ;
+}
+
+.head-left{
+  float: left;
+  width: 250px;
+  height: 55px;
+}
+
+.head-left-top{
+  margin-top:3px;
+  font-size: 18px;
+  color:white;
+}
+
+.head-left-bottom{
+  margin-top: 5px;
+  font-size: 14px;
+  color:white;
+}
+
+.head-right{
+  float: right;
+  margin-top: 5px;
+  padding-right: 15px;
+}
+
+.define{
+  font-size: 10px;
+  width:85%;
+  height: 13px;
+  text-align: center;
+  margin:9px auto 17px auto;
+}
+
+.green{
+  margin-left: 20px;
+  float: left;
+  width:12px;
+  height:12px;
+  border-radius: 6px;
+  background-color: #16C195;
+}
+
+.yellow{
+  margin-left: 10px;
+  float: left;
+  width:12px;
+  height:12px;
+  border-radius: 6px;
+  background-color: #F7B55E;
+}
+
+.red{
+  margin-left: 10px;
+  float: left;
+  width:12px;
+  height:12px;
+  border-radius: 6px;
+  background-color: #F2725E;
+}
+
+.def{
+  line-height:13px;
+  font-size: 10px;
+  float: left;
+}
+
+.root{
+  width:88%;
+  margin: auto;
+}
+
+.root>div{
+  height: 38px;
+  border-bottom: solid 1px #797979;
+}
+
+.item-left{
+  color:white;
+  text-align: center;
+  margin-top:4px;
+  font-size: 12px;
+  line-height: 30px;
+  width:36px;
+  height: 30px;
+  float: left;
+  background-color :#16C195;
+  border-radius: 10px 0 0 10px;
+}
+
+.item-right{
+  margin-top:4px;
+  height: 30px;
+  float: left;
+  margin-left:7px;
+}
+
+.item-top{
+  font-size:10px;
+  width: 100%;
+  height: 12px;
+  background-color :#16C195;
+  border-radius: 0 4px 4px 0;
+  white-space:nowrap;
+}
+
+.item-bottom{
+  font-size: 10px;
+  width: 100%;
+  margin-top: 4px;
+  height:16px;
+}
+
+.item-bottom1{
+  float: left;
+}
+
+.item-bottom2{
+  height:12px;
+  line-height:12px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #16C195;
+  float: right;
+  white-space:pre;
+}
+
+.item-bottom3{
+  float: right;
+}
+
+.foot{
+  width:100%;
+  height:100px;
+}
+
+.bottom-line{
+  border-top: 1px solid #DFDFDF;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.bottom-line td{
+  height: 45px;
+}
+
+.bottom-line div{
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.reserved-place{
+  height: 45px;
+  position: relative;
+  margin-bottom: 0px;
+}

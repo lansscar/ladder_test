@@ -1,0 +1,25 @@
+<div>
+  <div class="container no-result" id="no-result-div">
+    <%= image_tag 'find.png', class: ['img-responsive', ''] %>
+    <label>未找到指定的绩效申请</label>
+  </div>
+  <div class="container results" id="results-div">
+    <label id="details-title" class="details-title"></label>
+    <label id="details-name" class="details-name"></label>
+    <% if !@admin %>
+    <label id="details-status" class="details-status"></label>
+    <% else %>
+    <div class="dropdown">
+      <button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="dropdown-menu">
+        <li role="option"><a></a></li>
+      </ul>
+    </div>
+    <% end %>
+
+    <label id="details-description" class="details-description"></label>
+    <div id="logs"></div>
+  </div>
+  <label id="log-sample" class="log-sample"></label>
+</div>
